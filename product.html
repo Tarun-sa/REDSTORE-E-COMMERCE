@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title> Product-REDSTORE|E-COMMERCE WEBSITE DESIGN</title>
+  <meta name="viewport" content="width=device-width" ,initial-scale="1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/d2549c76b2.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="navbar">
+      <div class="logo">
+        <img src="images/logo.png" width="125px">
+      </div>
+      <nav>
+        <ul id="menuitems">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Account</a></li>
+        </ul>
+      </nav>
+      <img src="images/cart.png " width="30px" height="30px" alt="">
+      <img src="images/menu.png" alt="" class="menu-icon" onclick="menuToggle()">
+    </div>
+  </div>
+
+
+  <!-- *************featured products**************** -->
+  <div class="featured-product">
+
+    <div class="small-container">
+      <div class="row row-2">
+        <h2>All Products</h2>
+        <select>
+          <option>Default Shorting</option>
+          <option>Short by price</option>
+          <option>Short by popularity</option>
+          <option>Short by rating</option>
+          <option>Short by sale</option>
+
+        </select>
+      </div>
+
+      <div class="row-3">
+        <div class="col-4">
+          <img src="images/product-1.jpg" alt="">
+          <h4>Red Printed T-Shirt</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$50.0</p>
+        </div>
+        <div class="col-4">
+          <img src="images/product-2.jpg" alt="">
+          <h4>Red Printed T-Shirt</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-alt"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$50.0</p>
+        </div>
+        <div class="col-4">
+          <img src="images/product-3.jpg" alt="">
+          <h4>Red Printed T-Shirt</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$50.0</p>
+        </div>
+        <div class="col-4">
+          <img src="images/product-4.jpg" alt="">
+          <h4>Red Printed T-Shirt</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-alt"></i>
+          </div>
+          <p>$50.0</p>
+        </div>
+      </div>
+      <div class="page-btn">
+        <span>1</span>
+        <span>2</span>
+        <span>3<span>
+        <span>4</span>
+        <span>&#8594;</span>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <!-- footer -->
+  <div class="footer">
+    <div class="container">
+      <div class="footer-row">
+        <div class="footer-col-1">
+          <h3>Download our App</h3>
+          <p>Download for Android and Ios mobile</p>
+          <div class="app-logo">
+            <img class="play-store" src="images/play-store.png" alt="">
+            <img src="images/app-store.png" alt="">
+          </div>
+        </div>
+        <div class="footer-col-2">
+          <img src="images/logo-white.png" alt="">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+        </div>
+        <div class="footer-col-3">
+          <h3>Useful Links</h3>
+          <ul>
+            <li>Coupons</li>
+            <li>Blog post</li>
+            <li>Return Policy</li>
+            <li>Join Affliliate</li>
+          </ul>
+        </div>
+        <div class="footer-col-4">
+          <h3>Follow Us</h3>
+          <ul>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Instagram</li>
+            <li>Pinterest</li>
+          </ul>
+        </div>
+
+      </div>
+      <hr>
+      <p class="copyright ">Copyright @2020</p>
+    </div>
+
+  </div>
+
+  <script type="text/javascript">
+    var menuitems = document.getElementById('menuitems');
+    menuitems.style.maxHeight = "0px";
+
+    function menuToggle() {
+      if (menuitems.style.maxHeight == "0px") {
+        menuitems.style.maxHeight = "200px";
+      } else {
+        menuitems.style.maxHeight = "0px";
+      }
+    }
+  </script>
+</body>
+
+</html>
